@@ -27,15 +27,6 @@
 
 local bit = require 'numberlua';
 local string = require "string";
--- this function take a sting as it's argument and return a table that contains the ascii code of it's chars.
-function string_to_ascii_code(str)
-	local str_len = #chunk;
-	local result = {};
-	for i=1,str_len do 
-		result[i] = string.byte(str,i);
-	end
-	return result;
-end
 
 function num2hex(num)
 	local hexstr = '0123456789abcdef'
